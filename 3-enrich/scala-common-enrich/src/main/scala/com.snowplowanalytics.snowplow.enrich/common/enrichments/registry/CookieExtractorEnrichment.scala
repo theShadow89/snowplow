@@ -66,7 +66,7 @@ object CookieExtractorEnrichmentConfig extends ParseableEnrichment {
  */
 case class CookieExtractorEnrichment(
   cookieNames: List[String]
-) extends Enrichment {
+  ) extends Enrichment {
 
   def extract(headers: List[String]): List[JsonAST.JObject] = {
     // rfc6265 - sections 4.2.1 and 4.2.2
